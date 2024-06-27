@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    z-index: 0;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.picture-section {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px;
+    width: 50%; /* Full width for demonstration */
+}
+
+.slideshow-box {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    width: 100%; /* Full width of the parent container */
+    height: 450px; /* Adjust height as needed */
+    position: relative;
+}
+
+.slideshow-box img {
+    width: 40vw; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the images */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adjust the duration and easing function */
+}
+  
+.slideshow-box img:first-child {
+    z-index: 1;
+}
+  
+.slideshow-box img:nth-child(2) {
+    z-index: 0;
+}
+
+@media (max-width: 1000px) {
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .picture-section {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,54 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    z-index: 0;
+}
+
+.past-mems-display {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-items: center;
+    gap: 50px;
+}
+
+.past-mems-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.past-mems-text {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.past-mems-image {
+    width: 300px; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media(max-width: 729px) {
+    .past-mems-display{
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media(min-width: 730px) and (max-width: 1099px) {
+    .past-mems-display{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media(min-width: 1100px) {
+    .past-mems-display {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+.header {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex: 2 3;
+    position: fixed;
+    justify-content: space-between;
+    background: linear-gradient(to right,#FFB3BA,#FFDFBA,#FFB3BA);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    border: none;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-button {
+    text-decoration: none;
+    background-color: transparent;
+    color: #222222;
+    font-weight: 500;
+    font-size: 25px;
+    border: none;
+    cursor: pointer; 
+}
+
+.right-section {
+    display: flex;
+    width: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-button {
+    text-decoration: none; /* Remove the underline here */
+    background-color: transparent;
+    color: #222222;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Add position: relative to enable text-underline-offset */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+}
+
+.nav-button:hover::after {
+    bottom: -10px; /* Adjust this value to control the underline's offset on hover */
+    opacity: 1;
+}
