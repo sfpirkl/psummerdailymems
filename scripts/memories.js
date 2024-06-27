@@ -1,5 +1,5 @@
 const memList = [{
-    date: new Date(2024, 5, 26), //months are zero based so 5 is june
+    date: new Date(2024, 5, 27), //months are zero based so 5 is june
     memPhoto: 'dailyMems/dmem1.jpg',
     memTitle: 'Photographer and Rugger',
     memQuestions: [
