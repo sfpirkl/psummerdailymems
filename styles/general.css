@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(246, 246, 247);
+}
+
+.border-box {
+    z-index: 0;
+    --b: 3px;   /* thickness of the border */
+    --c: #FFB3BA;   /* color of the border */
+    --w: 50px;  /* width of border */
+    
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    
+    width: 45vw;
+    height: 45vw;
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.picture-section {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center; /* Center the content */
+    height:50px;
+}
+
+.title {
+    font-family: Nunito, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 10px;
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.title-div {
+    background: linear-gradient(to right, #FFDFBA, #FFB3BA);
+    height: 2px;
+    flex-grow: 1; /* Allow the line to grow */
+    margin: 0 20px; /* Add horizontal margins */
+}
+
+.front-page-body-text {
+    margin: 0px;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.body-text {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+}
+
+.memory-image {
+    width: 40vw; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+    top: 50%;
+    left: 50%;
+}
