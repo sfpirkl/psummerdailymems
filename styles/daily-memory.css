@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    z-index: 0;
+}
+
+.memory-section {
+    display: flex;
+    justify-content: center;
+}
+
+.memory-box { 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-text {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+}
+
+.question-display {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.question-options-section-css {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.question-button {
+    background-color: white;
+    max-width: 200px;
+    border-radius: 10px;
+    border: #FFB3BA 1.5px solid;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}

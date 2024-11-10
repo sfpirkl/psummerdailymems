@@ -1,0 +1,114 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    z-index: 0;
+}
+
+.past-mems-display {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-items: center;
+    gap: 50px;
+}
+
+.past-mems-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.past-mems-text {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.past-mems-image {
+    width: 300px; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.back-button {
+    font-family: Nunito, sans-serif; /* Retaining your font-family */
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px; /* Retaining font size */
+    text-decoration: none; /* Keep text decoration off */
+    color: #222222; /* Set the text color */
+    position: relative; /* Allow for positioning effects */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition for scaling and color */
+}
+
+.back-button:hover {
+    transform: scale(1.1); /* Enlarge text on hover */
+    color: #222222; /* Change color on hover for visibility */
+}
+
+/* Optional underline effect on hover */
+.back-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Position the underline below the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: transparent; /* Initial state */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for underline */
+}
+
+.back-button:hover::after {
+    background-color: #222222; /* Underline color on hover */
+}
+
+
+/* .back-button {
+    font-family: Montserrat, sans-serif;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+    text-decoration: none; 
+    background-color: transparent;
+    color: #222222;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    position: relative; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.back-button:hover::after {
+    bottom: -10px; 
+    opacity: 1;
+} */
+
+@media(max-width: 729px) {
+    .past-mems-display{
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media(min-width: 730px) and (max-width: 1099px) {
+    .past-mems-display{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media(min-width: 1100px) {
+    .past-mems-display {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
