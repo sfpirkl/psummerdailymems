@@ -670,7 +670,7 @@ const originalMemList = [{
 }, {
     id: 36,
     date: new Date(2024, 7, 2), //months are zero based so 5 is june
-    memPhoto: 'dailyMems/dmem37.jpg',
+    memPhoto: 'dailyMems/dmem37.JPG',
     memTitle: 'Birthday Boos',
     memQuestions: [
         'What was my favorite gift to you?',
